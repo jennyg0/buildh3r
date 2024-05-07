@@ -52,14 +52,16 @@ const wallets = await onboard.connectWallet();
 
 console.log(wallets);
 
+let ethersProvider;
+
 if (wallets[0]) {
   // create an ethers provider with the last connected wallet provider
   // if using ethers v6 this is:
-  // ethersProvider = new ethers.BrowserProvider(wallet.provider, 'any')
-  const ethersProvider = new ethers.providers.Web3Provider(
-    wallets[0].provider,
-    "any"
-  );
+  ethersProvider = new ethers.BrowserProvider(wallets[0].provider, "any");
+  // const ethersProvider = new ethers.providers.Web3Provider(
+  //   wallets[0].provider,
+  //   "any"
+  // );
 
   const signer = ethersProvider.getSigner();
 

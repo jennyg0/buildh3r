@@ -2,8 +2,6 @@
   "name": "blocknative",
   "version": "0.1.0",
   "private": true,
-  "target": "es2017",
-  "module": "es2022",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
