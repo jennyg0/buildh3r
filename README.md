@@ -1,1 +1,1 @@
-# buildh3r
+# buildh3r workshops - may 2024
